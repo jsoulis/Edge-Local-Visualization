@@ -98,6 +98,8 @@ const formatDate = (data) => {
 }
 const updateChart = (dataInput) => {
     var data = chart.config.data.datasets[0].data;
+
+    //may need to change this pop() to shift() and unshift() to push()... depends on the order of data received from API call.
     data.pop();
     data.unshift(formatDate(dataInput));
 

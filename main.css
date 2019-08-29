@@ -1,0 +1,22 @@
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.flex-container{
+    display: flex;
+    padding-bottom: 5ch;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.trend{
+    width: 65%;
+    padding-top: 2ch;
+    padding-left: 2ch;
+}
+.radar{
+    width: 35%;
+    padding-top: 2ch;
+}

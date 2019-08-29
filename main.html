@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="utils.js"></script>
+    <!-- references for radar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+	<script src="RadarUtils.js"></script>
+    <script src="analyser.js"></script>
+    <!-- references for radar END-->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <div class="flex-container">
+        <div class="trend">
+            <canvas id="chart1"></canvas>
+        </div>
+        <div class="radar">
+            <canvas id="canvas" ></canvas>
+        </div>
+    </div>
+
+    <!-- Radar Button Start-->
+ 
+    <!-- Radar Button End-->
+    <div>
+        <div class="limiter">
+            <div class="container-table100">
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">Stream Name</th>
+                                        <th class="cell100 column2">Timestamp</th>
+                                        <th class="cell100 column3">Value</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+    
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody id="table-body">
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">Like a butterfly</td>
+                                        <td class="cell100 column2">Boxing</td>
+                                        <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">Like a butterfly</td>
+                                        <td class="cell100 column2">Boxing</td>
+                                        <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">Like a butterfly</td>
+                                        <td class="cell100 column2">Boxing</td>
+                                        <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">Like a butterfly</td>
+                                        <td class="cell100 column2">Boxing</td>
+                                        <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                                    </tr>
+    
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">Like a butterfly</td>
+                                        <td class="cell100 column2">Boxing</td>
+                                        <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script>
+            $('.js-pscroll').each(function(){
+                var ps = new PerfectScrollbar(this);
+    
+                $(window).on('resize', function(){
+                    ps.update();
+                })
+            });
+                
+            
+        </script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+    <script src="Simulator.js"></script>
+    <script src="TrendScript.js"></script>
+    <script src="RadarScript.js"></script>
+    <script src="TrendScript.js"></script>
+</body>
+</html>
